@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  <define name ="1st group">
+  
+  <include name = "@smoke"/>
+  <include name = "@sanity"/>
+  
+  </define>
+  
+  <define name ="2nd group">
+  <include name = "@E2E"/>
+  <include name = "@Retest"/>
+  </define>
+  
+  <run>
+ 
+  <include name = "2nd group"/>
+  </run>
+  
+  
+  </groups>
+    <classes>
+      <class name="org.Frameworkday1.Frameworkday16TestngGroups1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
