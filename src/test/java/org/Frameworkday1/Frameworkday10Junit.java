@@ -1,11 +1,6 @@
 package org.Frameworkday1;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class Frameworkday10Junit {
 
@@ -38,7 +33,7 @@ public class Frameworkday10Junit {
 
 	}
 	
-	@Ignore
+	//@Test(enabled = false)
 	@Test
 	public void test4() {
 		System.out.println("Test4");
@@ -56,6 +51,31 @@ public class Frameworkday10Junit {
 	System.out.println("test3");
 	}
 	
+	
+	@Test(priority = -3)
+	private void tc3() {
+		System.out.println("test4");
+
+	}
+	
+
+	@Test(priority = 3)
+	private void tc4() {
+		System.out.println("test5");
+
+	}
+	
+	@Test(enabled = false)
+	private void tc5() {
+		System.out.println("test34");
+
+	}
+	
+	@Test(invocationCount =10)
+	private void tc6() {
+		System.out.println("test45");
+
+	}
 	
 	
 	
