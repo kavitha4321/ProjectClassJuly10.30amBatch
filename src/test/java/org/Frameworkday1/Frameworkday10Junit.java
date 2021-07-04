@@ -1,6 +1,15 @@
 package org.Frameworkday1;
-
 import org.testng.annotations.Test;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Ignore;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 
 public class Frameworkday10Junit {
 
@@ -51,6 +60,36 @@ public class Frameworkday10Junit {
 	System.out.println("test3");
 	}
 	
+	@Test
+	public void test10() {
+	System.out.println("test3");
+	}
+
+	@Test
+	public void test11() {
+	System.out.println("test2");
+	}
+	@Test
+	public void test8() {
+	System.out.println("test2");
+	
+	}
+
+	@Test
+	public void test5() {
+	System.out.println("test3");
+	}
+
+	@Test
+	public void test6() {
+	System.out.println("test2");
+	
+	}
+
+	@Test
+	public void tes7() {
+	System.out.println("test3");
+	}
 	
 	@Test(priority = -3)
 	private void tc3() {

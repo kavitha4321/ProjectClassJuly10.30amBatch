@@ -56,6 +56,28 @@ public class Frameworkday12TestngTest {
 	}
 	
 	
+	@Test(enabled = false)
+	private void tc9() {
+		System.out.println("test34");
+
+	}
+	
+	@Test(invocationCount =10)
+	private void tc10() {
+		System.out.println("test45");
+
+	}
+	@Test(enabled = false)
+	private void tc7() {
+		System.out.println("test34");
+
+	}
+	
+	@Test(invocationCount =10)
+	private void tc8() {
+		System.out.println("test45");
+
+	}
 	
 	 
 	
